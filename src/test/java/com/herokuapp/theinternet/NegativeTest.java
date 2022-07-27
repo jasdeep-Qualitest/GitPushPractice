@@ -22,17 +22,20 @@ public class NegativeTest {
 
 		// maximize browser window
 		driver.manage().window().maximize();
-		System.out.println("driver opened")
+		System.out.println("driver opened");
 
 //		open test page
 		String url = "http://the-internet.herokuapp.com/login";
 		driver.get(url);
 		System.out.println("Page is opened.");
+		System.out.println("Page is opened.");
+		System.out.println("Page is opened.");
+		System.out.println("Page is opened.");
+		System.out.println("Page is opened.");
 
 //		enter username
 		WebElement username = driver.findElement(By.id("username"));
 		username.sendKeys("incorrectUsername");
-		
 
 //		enter password
 		WebElement password = driver.findElement(By.name("password"));
@@ -50,10 +53,9 @@ public class NegativeTest {
 		String actualErrorMessage = errorMessage.getText();
 
 		Assert.assertTrue(actualErrorMessage.contains(expectedErrorMessage),
-				"Actual error message does not contain expected. \nActual: " 
-						+ actualErrorMessage + "\nExpected: "
+				"Actual error message does not contain expected. \nActual: " + actualErrorMessage + "\nExpected: "
 						+ expectedErrorMessage);
-		
+
 		// Close browser
 		driver.quit();
 	}
@@ -76,11 +78,12 @@ public class NegativeTest {
 		String url = "http://the-internet.herokuapp.com/login";
 		driver.get(url);
 		System.out.println("Page is opened.");
-
+		System.out.println("Page is opened.");
+		System.out.println("Page is opened.");
+		System.out.println("Page is opened.");
 //		enter username
 		WebElement username = driver.findElement(By.id("username"));
 		username.sendKeys("tomsmith");
-		
 
 //		enter password
 		WebElement password = driver.findElement(By.name("password"));
@@ -98,10 +101,9 @@ public class NegativeTest {
 		String actualErrorMessage = errorMessage.getText();
 
 		Assert.assertTrue(actualErrorMessage.contains(expectedErrorMessage),
-				"Actual error message does not contain expected. \nActual: " 
-						+ actualErrorMessage + "\nExpected: "
+				"Actual error message does not contain expected. \nActual: " + actualErrorMessage + "\nExpected: "
 						+ expectedErrorMessage);
-		
+
 		// Close browser
 		driver.quit();
 	}
