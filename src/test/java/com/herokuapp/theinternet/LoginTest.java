@@ -41,7 +41,12 @@ public class LoginTest {
 	    System.out.println(loginElement.equals("You logged into a secure area"));
 	    Assert.assertTrue(loginElement.getText().contains("You logged into a secure area"));
 	    System.out.println(" user logged in to secure area successfully ");
+
+	    Assert.assertEquals(loginElement.getText(),"You logged into a secure area","Assertion Failed equals");
+	    System.out.println(" user logged in to secure area successfully ");
+
 //	    Assert.assertEquals(loginElement.getText(),"You logged into a secure area","Assertion Failed equals");
+
 	    System.out.println(" Assert.assertEquals passed");
          driver.quit();
 	}
