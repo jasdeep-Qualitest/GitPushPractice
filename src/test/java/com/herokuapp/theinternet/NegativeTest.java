@@ -22,6 +22,7 @@ public class NegativeTest {
 
 		// maximize browser window
 		driver.manage().window().maximize();
+		System.out.println("driver opened")
 
 //		open test page
 		String url = "http://the-internet.herokuapp.com/login";
